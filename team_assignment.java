@@ -36,19 +36,20 @@ public class team_assignment {
                    }
                }
            }
+           if(numbers.equals(str)){
+               cnt_Try +=1;
+               System.out.println(cnt_Try + "번째 시도 : " + str);
+               System.out.println("3S");
+               System.out.println(cnt_Try + "번만에 맞히셨습니다.");
+               System.out.println("게임을 종료합니다.");
+               break;
+           }
+
            cnt_Try +=1;
 
            System.out.println(cnt_Try + "번째 시도 : " + numbers);
            System.out.println(ball + "B" + cnt_Strike + "S" );
 
-            if(numbers.equals(str)){
-                cnt_Try +=1;
-                System.out.println(cnt_Try + "번째 시도 : " + str);
-                System.out.println("3S");
-                System.out.println(cnt_Try + "번만에 맞히셨습니다.");
-                System.out.println("게임을 종료합니다.");
-                break;
-            }
 
 
 
